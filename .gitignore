@@ -1,0 +1,40 @@
+# compiled output
+/dist
+/tmp
+/.nyc_output
+
+# dependencies
+/node_modules
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+/connect.lock
+/coverage
+npm-debug.log
+/typings
+yarn-error.log
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Ssl files for localhost tests
+/ssl
+
+# local environment variable
+.env
