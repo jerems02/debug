@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "NODE_ENV=development nodemon ./bin/www",
+    "dev": "nodemon ./bin/www",
     "grunt": "grunt",
-    "start": "node ./bin/www"
+    "start": "node --require ts-node/register ./bin/www",
+    "start:debug:ts": "node --inspect --require ts-node/register ./bin/www"
   },
   "author": "",
   "license": "ISC",
@@ -24,6 +25,8 @@
     "method-override": "^3.0.0",
     "morgan": "^1.9.1",
     "pug": "^2.0.3",
+    "source-map-support": "^0.5.10",
+    "ts-node": "^8.0.1",
     "tslint": "^5.12.1",
     "typescript": "^3.2.4",
     "typings": "^2.1.1"

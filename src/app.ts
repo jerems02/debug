@@ -1,3 +1,5 @@
+require('source-map-support').install()
+
 import * as cookieParser from "cookie-parser";
 import * as express from "express";
 import * as path from "path";
