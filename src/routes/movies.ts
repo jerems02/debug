@@ -1,3 +1,4 @@
+
 import * as express from 'express';
 import * as moviesService from '../services/movies';
 
@@ -7,17 +8,20 @@ router.get('/',  (req, res) => {
     res.end('Films');
 
 });
-
-router.get('/detail/:id',   (req, res) => {
+//todo ggg$
+router.get('/detail/:id',   async(req, res) => {
     let movieId = req.params.id;
-    try {
-        throw Error('mince alors');
+
+    /*try {
+        let movieName = await moviesService.findMovie(movieId).catch( err => {
+            throw (err);
+        });
     } catch (err) {
         console.log(err);
-    }
+    }*/
+    let movieName =  moviesService.findMovie(movieId);
 
-    // let movieName =  moviesService.findMovie(movieId);
-    res.end('Nom du film: ' );
+    res.end('Nom du film: ' , movieName);
 
 });
 
