@@ -6,12 +6,5 @@ export const findMovie = (id) => {
         3: "Les goonies"
     }
     const name = movies[id];
-    /*const name = await new Promise((resolve, reject) => {
-        setTimeout(() => {
-            // console.log('ici: ', movies[id]);
-            throw Error('une erreur asynchrone');
-        }, 1000);
-    });*/
-    //console.log('et là name: ', name);
     return name;
 }

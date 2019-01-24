@@ -1,1 +1,0 @@
-src\app.ts src\routes\index.ts src\routes\movies.ts src\services\movies.ts --removeComments --rootDir src --target ES6 --module commonjs --outDir ./dist
